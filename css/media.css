@@ -1,0 +1,17 @@
+.img_galery {
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img_galery:hover {
+  -webkit-filter: grayscale(0.7);
+          filter: grayscale(0.7);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+}
+/*# sourceMappingURL=media.css.map */

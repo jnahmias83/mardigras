@@ -1,0 +1,15 @@
+@import 'variables';
+
+#footer {
+    color: $grey;
+    text-align: center;
+    font-style: italic;
+    background-color: $black;
+    padding: 1rem;
+  }
+  
+  .fa-brands {
+    &:hover {
+      transform: scale(1.3);
+    }
+  }

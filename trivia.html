@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Henny Penny"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pattaya"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>Mardi Gras</title>
+  </head>
+  <body>
+    <!--nav-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"
+          ><img class="logo" src="images/mardigras-logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link green" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link violet" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link yellow" href="/media.html">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link grey" href="/faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link green" href="/contact-us.html"
+                >Contact Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active violet" href="/trivia.html">Trivia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end nav-->
+   
+    <!--card trivia-->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-trivia-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">1 - What do the colors of Mardi Gras stand for? Green is for _________, gold means_________and purple symbolizes</h5>
+              <!--Faith, power and justice-->
+              <p class="card-text pt-2">
+                <div>
+                  <input type="radio" name="ans_question_1" id="ans_question_1" value="1">
+                   &nbsp;         
+                   Faith, power and justice
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_1" id="ans_question_1" value="2">
+                   &nbsp;
+                   Grass, sun and flowers
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_1" id="ans_question_1" value="3">
+                   &nbsp;
+                   Love, happiness and sacred
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_1" id="ans_question_1" value="4">
+                   &nbsp;
+                   Hope, value and richness of life
+                </div>
+              </p>
+              <p id="good_ans_1"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-trivia-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">2 - What does "mardi gras" mean?</h5>
+              <!--Fat Tuesday-->
+              <p class="card-text pt-2">
+                <div>
+                  <input type="radio" name="ans_question_2" id="ans_question_2" value="1">
+                   &nbsp;
+                   Big Party
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_2" id="ans_question_2" value="2">
+                   &nbsp;
+                   Parade
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_2" id="ans_question_2" value="3">
+                   &nbsp;
+                   Fat Tuesday
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_2" id="ans_question_2" value="4">
+                   &nbsp;
+                   New Orleans
+                </div>
+              </p>
+              <p id="good_ans_2"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-trivia-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">3 - What is a doubloon?</h5>
+              <!--A special coin thrown at parades-->
+              <p class="card-text pt-2">
+                <div>
+                  <input type="radio" name="ans_question_3" id="ans_question_3" value="1">
+                  &nbsp;
+                  A cake with a baby inside
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_3" id="ans_question_3" value="2">
+                   &nbsp;
+                   A decorated truck in a parade
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_3" id="ans_question_3" value="3">
+                   &nbsp;
+                   A colorful mask worn at Mardi Gras
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_3" id="ans_question_3" value="4">
+                   &nbsp;
+                   A special coin thrown at parades
+                </div>
+              </p>
+              <p id="good_ans_3"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-trivia-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">4 - What is the general name given to organizations that put together floats for parades and/or balls?</h5>
+              <!--Krewes-->
+              <p class="card-text pt-2">
+                <div>
+                  <input type="radio" name="ans_question_4" id="ans_question_4" value="1">
+                   &nbsp;      
+                   Krewes
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_4" id="ans_question_4" value="2">
+                  &nbsp;
+                  Mardi Gras masses
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_4" id="ans_question_4" value="3">
+                   &nbsp;
+                   Potolos
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_4" id="ans_question_4" value="4">
+                   &nbsp;
+                   Batches
+                </div>
+              </p>
+              <p id="good_ans_4"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-trivia-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">5 - How many king cakes are sold every year in New Orleans?</h5>
+              <!-- 750,000 -->
+              <p class="card-text pt-2">
+                <div>
+                  <input type="radio" name="ans_question_5" id="ans_question_5" value="1">
+                   &nbsp;
+                   5000
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_5" id="ans_question_5" value="2">
+                   &nbsp;
+                   2 millions
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_5" id="ans_question_5" value="3">
+                   &nbsp;
+                   750,000
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_5" id="ans_question_5" value="4">
+                   &nbsp;
+                   25,000
+                </div>
+              </p>
+              <p id="good_ans_5"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-trivia-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">6 - The first known celebration of Mardi Gras was held in__________________.</h5>
+              <!-- Mobile, AL -->
+              <p class="card-text pt-2">
+                <div>
+                  <input type="radio" name="ans_question_6" id="ans_question_6" value="1">
+                   &nbsp;
+                   Mobile, AL
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_6" id="ans_question_6" value="2">
+                   &nbsp;
+                   New Orleans, LA
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_6" id="ans_question_6" value="3">
+                   &nbsp;
+                   Biloxi, MS
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_6" id="ans_question_6" value="4">
+                   &nbsp;
+                   Corpus Christi, TX
+                </div>
+              </p>
+              <p id="good_ans_6"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-trivia-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">7 - Mardi Gras has been a legal holiday since ________.</h5>
+              <!-- 1875 -->
+              <p class="card-text pt-2">
+                <div>
+                  <input type="radio" name="ans_question_7" id="ans_question_7" value="1">
+                   &nbsp;
+                   1875
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_7" id="ans_question_7" value="2">
+                   &nbsp;
+                   1990
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_7" id="ans_question_7" value="3">
+                   &nbsp;
+                   1805
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_7" id="ans_question_7" value="4">
+                   &nbsp;
+                   1948
+                </div>
+              </p>
+              <p id="good_ans_7"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-trivia-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">8 - Before the Cajuns settled in Louisiana, where did they settle after leaving France?</h5>
+              <!-- Eastern Canada -->
+              <p class="card-text pt-2">
+                <div>
+                  <input type="radio" name="ans_question_8" id="ans_question_8"  value="1">
+                   &nbsp;
+                   Eastern Canada
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_8" id="ans_question_8" value="2">
+                   &nbsp;
+                   The Great Lakes
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_8" id="ans_question_8" value="3">
+                   &nbsp;
+                   Maine
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_8" id="ans_question_8" value="4">
+                   &nbsp;
+                   Florida
+                </div>
+              </p>
+              <p id="good_ans_8"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-trivia-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">9 - Which of the following is a Louisiana dish?</h5>
+              <!-- All of these -->
+              <p class="card-text pt-2">
+                <div>
+                  <input type="radio" name="ans_question_9" id="ans_question_9" value="1">
+                   &nbsp;
+                   Gumbo
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_9" id="ans_question_9" value="2">
+                   &nbsp;
+                   Jambalaya
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_9" id="ans_question_9" value="3">
+                   &nbsp;
+                   Etouffée
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_9" id="ans_question_9" value="4">
+                   &nbsp;
+                   All of these
+                </div>
+              </p>
+              <p id="good_ans_9"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-trivia-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">10 - Fat Tuesday/Mardi Gras is also known as ____________ in other parts of the world.</h5>
+              <!-- Pancake Day -->
+              <p class="card-text pt-2">
+                <div>
+                  <input type="radio" name="ans_question_10" id="ans_question_10" value="1">
+                   &nbsp;
+                   Pancake Day
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_10" id="ans_question_10" value="2">
+                   &nbsp;
+                   Carnival Day
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_10" id="ans_question_10" value="3">
+                   &nbsp;
+                   King's Day
+                </div>
+                <div>
+                  <input type="radio" name="ans_question_10" id="ans_question_10" value="4">
+                   &nbsp;
+                   The Big Feast
+                </div>
+              </p>
+              <p id="good_ans_10"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end card trivia-->
+
+    <div class="container mt-2">
+          <div class="row">
+            <div class="col-12 text-start">
+                <button class="btn btn-primary me-2" onclick="checkAnswers(event)">Send</button>
+                <button class="btn btn-dark" onclick="resetTrivia(event)">Reset</button>
+            </div>
+          </div>
+    </div>
+
+    <div class="container">
+      <p id="trivia-result">Your grade is: </p>
+    </div>
+
+    <!--card sponsors-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/walkons-logo.svg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">GAME DAY WITH A TASTE OF LOUISIANA</h5>
+              <p class="card-text p_sponsor">
+                There’s really no better way to describe the uniqueness of
+                Walk-On’s Sports Bistreaux...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(0)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/si_logo_L.webp"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Immerse yourself in style at our French Quarter hotel
+              </h5>
+              <p class="card-text p_sponsor">
+                Brimming with style and grounded in our community, Sheraton New
+                Orleans Hotel is the perfect home base for your downtown escape.
+                Located on Canal Street, our hotel is steps from the buzz of the
+                French Quarter, and also offers seamless access to notable NOLA
+                points of interest ...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(1)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/ace-hotel-logo.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                A stone’s throw from the French Quarter, in the soul of the Deep
+                South.
+              </h5>
+              <p class="card-text p_sponsor">
+                In 2016, Ace added another link to its chain of ultracool hotels
+                when it opened an outpost in a renovated 1928 building in the
+                Central Business District of New Orleans. While the Ace
+                employees here are just as edgy as their counterparts
+                elsewhere...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(2)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/ritz-carlton-primary-black.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                WITHIN A HISTORIC BEAUX ARTS BUILDING IN NEW ORLEANS’ FRENCH
+                QUARTER, A HOTEL OFFERS LUXURY WITH A LOCAL TOUCH.
+              </h5>
+              <p class="card-text p_sponsor">
+                Rich in history and personality, New Orleans is unlike any other
+                US city. Honoring its spirit and elegance, The Ritz-Carlton, New
+                Orleans invites visitors to its French Quarter retreat, set
+                within a 1908 Beaux Arts building...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(3)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top img-parking"
+                src="images/premium-parking.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">New Orleans Parking</h5>
+              <p class="card-text p_sponsor">
+                Whether you are a resident of New Orleans or just passing
+                through, Premium Parking is a great place to park and we will
+                always have a space for you...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(4)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/LCM_Color-Logo_Horizontal.webp"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                When you make a child's potential visible, wonderful things
+                happen.
+              </h5>
+              <p class="card-text p_sponsor">
+                Louisiana Children’s Museum has cleaning and safety procedures
+                throughout our museum that protect the health and well-being of
+                our guests, volunteers, and staff members...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(5)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/mod-hdr3.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                The city of New Orleans has dropped their mask mandate,
+                therefore wearing a face mask inside the Museum of Death is
+                optional, but still recommended.
+              </h5>
+              <p class="card-text p_sponsor">
+                We would like to take this opportunity to thank all of the
+                visitors that we’ve had for your undying support over the last
+                25+ years. Your questions, comments, and even emotional
+                outbursts have kept us above ground and entertained throughout
+                the Museum’s history and we can’t wait to surprise you all with
+                a spectacular new experience ...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(6)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/haunted-museum-logo.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tour the Haunted Museum in Las Vegas</h5>
+              <p class="card-text p_sponsor">
+                Join us for a spirited adventure through Zak Bagans’ The Haunted
+                Museum in Las Vegas, as seen on the Travel Channel’s Ghost
+                Adventures! See original collectibles from haunted sites and
+                hear the bone-chilling stories of the paranormal activity that
+                surrounds them...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(7)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end card sponsors-->
+   
+    <!--modal sponsors-->
+    <div
+      class="modal fade"
+      id="sponsorModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="modal-body" class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+    <!--end modal sponsors-->
+
+   <!--Footer-->
+    <div id="footer">
+      <div class="row">
+        <div class="col-md-12">© Copyright 2022. All Rights Reserved</div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <a
+            href="https://www.facebook.com/MardiGras.nola/"
+            title="Facebook"
+            target="_blank"
+            ><i class="fa-brands fa-facebook-square fa-2x"></i
+          ></a>
+          &nbsp;
+          <a
+            href="https://twitter.com/mardigrasnola?lang=en"
+            title="Twitter"
+            target="_blank"
+            ><i class="fa-brands fa-twitter-square fa-2x"></i
+          ></a>
+          &nbsp;
+          <a
+            href="https://www.linkedin.com/company/mardi-gras-world"
+            title="Linkedin"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2x"></i
+          ></a>
+          &nbsp;
+          <a
+            href="https://www.instagram.com/nolamardigras/?hl=en"
+            title="Instagram"
+            target="_blank"
+            ><i class="fa-brands fa-instagram-square fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!--end Footer-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

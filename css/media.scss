@@ -1,0 +1,10 @@
+.img_galery {
+    height: 12rem;
+    object-fit: cover;
+  
+    &:hover {
+      filter: grayscale(0.7);
+      transform: scale(1.05);
+      transition: transform 3s;
+    }
+  }

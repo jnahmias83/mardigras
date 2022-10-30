@@ -1,0 +1,42 @@
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+.logo {
+  width: 8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+li a {
+  font-family: "Henny Penny" !important;
+  font-size: 23px;
+}
+
+.green {
+  color: #8cbf3f !important;
+}
+
+.violet {
+  color: #9453a6 !important;
+}
+
+.yellow {
+  color: #f2cc0f !important;
+}
+
+.grey {
+  color: #f2f2f2 !important;
+}
+
+.black {
+  color: #0d0d0d !important;
+}
+
+.active {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=navbar.css.map */

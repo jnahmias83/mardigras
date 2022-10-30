@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Henny Penny"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pattaya"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>Mardi Gras</title>
+  </head>
+  <body>
+    <!--nav-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"
+          ><img class="logo" src="images/mardigras-logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link green" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link violet" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link yellow" href="/media.html">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link grey" href="/faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active green" href="/contact-us.html"
+                >Contact Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link violet" href="/trivia.html">Trivia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end nav-->
+
+    <div class="container">
+      <div class="div-contact-us-title">
+        <h5 class="display-6">Contact Us</h5>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <!-- contact form -->
+          <form id="form-id" action="">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="firstname"
+                placeholder="First Name"
+                required
+              />
+              <label for="firstname">First Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="lastname"
+                placeholder="Last Name"
+                required
+              />
+              <label for="lastname">Last Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="name@example.com"
+                value="name@example.com"
+                required
+              />
+              <label for="email">Email address</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control my-3"
+                id="message"
+                placeholder="Enter your message"
+                style="height: 100px"
+                required
+              ></textarea>
+              <label for="comments">Enter your message ...</label>
+            </div>
+            <button
+              class="btn btn-primary my-3 w-100"
+              onclick="checkData(event);"
+            >
+              Send
+            </button>
+          </form>
+          <!--end contact form-->
+        </div>
+        <div class="col-md-6">
+          <iframe
+            id="google-map-id"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13825.665031913653!2d-90.07407465000003!3d29.96746504999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a60745994529%3A0x64df7d45b0f31b9a!2sTrem%C3%A9%20%2F%20Lafitte%2C%20New%20Orleans%2C%20LA%2C%20USA!5e0!3m2!1sen!2sil!4v1651155804260!5m2!1sen!2sil"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+   
+    <!--card info-->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-info-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">City of New Orleans Mayor's Office</h5>
+              <p class="card-text pt-2">
+                <strong>Address: </strong>1300 Perdido St, New Orleans, LA
+                70112, United States
+                <br />
+                <strong>Phone: </strong> +1 504-658-4900
+                <br />
+                <strong>Email: </strong
+                ><a href="mailto:mayor@nola.gov">mayor@nola.gov</a>
+              </p>
+              <a
+                href="https://maccno.com/cityofficials"
+                class="btn btn-primary"
+                target="_blank"
+                >>> See Website</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-info-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">Mardi Gras Insider Tours</h5>
+              <p class="card-text pt-2">
+                <strong>Phone: </strong> +1 504-322-7753
+                <br />
+                <strong>Email: </strong
+                ><a href="mailto:info@festivalinsidertours.com"
+                  >info@festivalinsidertours.com</a
+                >
+              </p>
+              <a
+                href="https://mardigrasinsidertours.com/?msclkid=46d8aca3c7be11ecadb1bcc937c6953a"
+                class="btn btn-primary"
+                target="_blank"
+                >>> See Website</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 col-md-4 my-2">
+          <div id="card-info-id" class="card">
+            <div class="card-body">
+              <h5 class="card-title">Mardi Gras Party Hosting</h5>
+              <p class="card-text pt-2">
+                <strong>Phone: </strong> +1 800-619-9563
+                <br />
+                <strong>Email: </strong
+                ><a href="mailto:events@bartendercompany.com"
+                  >events@bartendercompany.com</a
+                >
+              </p>
+              <a
+                href="https://www.bartendercompany.com/2019/02/04/mardi-gras-party-hosting/?msclkid=b782b421c7bf11eca13de4c48760dfc6"
+                class="btn btn-primary"
+                target="_blank"
+                >>> See Website</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end card info-->
+
+    <br />
+
+    <!--card sponsors-->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/walkons-logo.svg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">GAME DAY WITH A TASTE OF LOUISIANA</h5>
+              <p class="card-text p_sponsor">
+                There’s really no better way to describe the uniqueness of
+                Walk-On’s Sports Bistreaux...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(0)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/si_logo_L.webp"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Immerse yourself in style at our French Quarter hotel
+              </h5>
+              <p class="card-text p_sponsor">
+                Brimming with style and grounded in our community, Sheraton New
+                Orleans Hotel is the perfect home base for your downtown escape.
+                Located on Canal Street, our hotel is steps from the buzz of the
+                French Quarter, and also offers seamless access to notable NOLA
+                points of interest ...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(1)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/ace-hotel-logo.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                A stone’s throw from the French Quarter, in the soul of the Deep
+                South.
+              </h5>
+              <p class="card-text p_sponsor">
+                In 2016, Ace added another link to its chain of ultracool hotels
+                when it opened an outpost in a renovated 1928 building in the
+                Central Business District of New Orleans. While the Ace
+                employees here are just as edgy as their counterparts
+                elsewhere...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(2)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/ritz-carlton-primary-black.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                WITHIN A HISTORIC BEAUX ARTS BUILDING IN NEW ORLEANS’ FRENCH
+                QUARTER, A HOTEL OFFERS LUXURY WITH A LOCAL TOUCH.
+              </h5>
+              <p class="card-text p_sponsor">
+                Rich in history and personality, New Orleans is unlike any other
+                US city. Honoring its spirit and elegance, The Ritz-Carlton, New
+                Orleans invites visitors to its French Quarter retreat, set
+                within a 1908 Beaux Arts building...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(3)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top img-parking"
+                src="images/premium-parking.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">New Orleans Parking</h5>
+              <p class="card-text p_sponsor">
+                Whether you are a resident of New Orleans or just passing
+                through, Premium Parking is a great place to park and we will
+                always have a space for you...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(4)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/LCM_Color-Logo_Horizontal.webp"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                When you make a child's potential visible, wonderful things
+                happen.
+              </h5>
+              <p class="card-text p_sponsor">
+                Louisiana Children’s Museum has cleaning and safety procedures
+                throughout our museum that protect the health and well-being of
+                our guests, volunteers, and staff members...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(5)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/mod-hdr3.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                The city of New Orleans has dropped their mask mandate,
+                therefore wearing a face mask inside the Museum of Death is
+                optional, but still recommended.
+              </h5>
+              <p class="card-text p_sponsor">
+                We would like to take this opportunity to thank all of the
+                visitors that we’ve had for your undying support over the last
+                25+ years. Your questions, comments, and even emotional
+                outbursts have kept us above ground and entertained throughout
+                the Museum’s history and we can’t wait to surprise you all with
+                a spectacular new experience ...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(6)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div id="card-sponsor" class="card">
+            <div class="div-card">
+              <img
+                class="card-img-top"
+                src="images/haunted-museum-logo.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tour the Haunted Museum in Las Vegas</h5>
+              <p class="card-text p_sponsor">
+                Join us for a spirited adventure through Zak Bagans’ The Haunted
+                Museum in Las Vegas, as seen on the Travel Channel’s Ghost
+                Adventures! See original collectibles from haunted sites and
+                hear the bone-chilling stories of the paranormal activity that
+                surrounds them...
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
+                onclick="showSponsor(7)"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end card sponsors-->
+   
+    <!--modal sponsors-->
+    <div
+      class="modal fade"
+      id="sponsorModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="modal-body" class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+    <!--end modal sponsors-->
+
+   <!--Footer-->
+    <div id="footer">
+      <div class="row">
+        <div class="col-md-12">© Copyright 2022. All Rights Reserved</div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <a
+            href="https://www.facebook.com/MardiGras.nola/"
+            title="Facebook"
+            target="_blank"
+            ><i class="fa-brands fa-facebook-square fa-2x"></i
+          ></a>
+          &nbsp;
+          <a
+            href="https://twitter.com/mardigrasnola?lang=en"
+            title="Twitter"
+            target="_blank"
+            ><i class="fa-brands fa-twitter-square fa-2x"></i
+          ></a>
+          &nbsp;
+          <a
+            href="https://www.linkedin.com/company/mardi-gras-world"
+            title="Linkedin"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2x"></i
+          ></a>
+          &nbsp;
+          <a
+            href="https://www.instagram.com/nolamardigras/?hl=en"
+            title="Instagram"
+            target="_blank"
+            ><i class="fa-brands fa-instagram-square fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!--end Footer-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

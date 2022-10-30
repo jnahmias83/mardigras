@@ -1,0 +1,41 @@
+@import 'variables';
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  }
+  
+  .logo {
+    width: 8rem;
+    object-fit: cover;
+  }
+  
+  li a {
+    font-family: "Henny Penny" !important;
+    font-size: $size;
+  }
+  
+  .green {
+    color: $green !important;
+  }
+  
+  .violet {
+    color: $violet !important;
+  }
+  
+  .yellow {
+    color: $yellow !important;
+  }
+  
+  .grey {
+    color: $grey !important;
+  }
+  
+  .black {
+    color: $black !important;
+  }
+  
+  .active {
+    text-decoration: underline;
+  }

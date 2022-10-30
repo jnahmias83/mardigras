@@ -1,0 +1,21 @@
+@import 'variables';
+
+#trivia-result {
+    background-color: $black;
+    color: $grey;
+    font: {
+        family: 'Roboto';
+        size: 23px;
+        weight: bold;
+    }
+
+    margin-top: 1rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#card-trivia-id {
+    background: linear-gradient($green, $violet, $yellow);
+}

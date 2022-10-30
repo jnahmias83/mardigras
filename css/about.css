@@ -1,0 +1,14 @@
+.img-about {
+  float: right;
+  margin-left: 1rem;
+  max-width: 320px;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-bottom: 1rem;
+}
+
+.pt05 {
+  padding-top: 0.5rem;
+}
+/*# sourceMappingURL=about.css.map */

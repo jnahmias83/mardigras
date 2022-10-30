@@ -1,0 +1,404 @@
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+.logo {
+  width: 8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+li a {
+  font-family: "Henny Penny" !important;
+  font-size: 23px;
+}
+
+.green {
+  color: #8cbf3f !important;
+}
+
+.violet {
+  color: #9453a6 !important;
+}
+
+.yellow {
+  color: #f2cc0f !important;
+}
+
+.grey {
+  color: #f2f2f2 !important;
+}
+
+.black {
+  color: #0d0d0d !important;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+h1,
+h5 {
+  text-shadow: 1px 2px 3px #9453a6 !important;
+  font-family: "Pattaya" !important;
+  margin-top: 1rem;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-img-top:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+}
+
+.img-parking {
+  max-width: 80px !important;
+}
+
+.p_sponsor, .p_index,
+.p_about {
+  font-family: "Roboto" !important;
+  margin-top: 1rem;
+}
+
+.p_index,
+.p_about {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  min-height: 350px;
+}
+
+#card-sponsor {
+  width: 100%;
+  height: 99%;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+.div-card,
+.div-contact-us-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+}
+
+.modal-header {
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  #modal-img {
+    width: 310px;
+    height: 260px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .img_galery,
+  .video {
+    width: 19rem;
+  }
+  #card-info-id {
+    width: 320px;
+  }
+  #card-trivia-id {
+    width: 320px;
+    height: 350px;
+  }
+  #google-map-id {
+    width: 320px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 540px) {
+  #modal-img {
+    width: 445px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .img_galery,
+  .video {
+    width: 25rem;
+  }
+  #card-info-id {
+    width: 400px;
+  }
+  #card-trivia-id {
+    width: 400px;
+    height: 300px;
+  }
+  #google-map-id {
+    width: 250px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+  #modal-img {
+    width: 460px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .img_galery,
+  .video {
+    width: 17rem;
+  }
+  #card-info-id {
+    width: 230px;
+  }
+  #card-trivia-id {
+    width: 260px;
+    height: 370px;
+  }
+  #google-map-id {
+    width: 450px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav-item:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  #modal-dialog-id {
+    max-width: 620px !important;
+  }
+  #modal-img {
+    width: 580px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .img_galery,
+  .video {
+    width: 15rem;
+  }
+  #card-info-id {
+    width: 220px;
+  }
+  #card-trivia-id {
+    width: 230px;
+    height: 415px;
+  }
+  #google-map-id {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .nav-item:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  #modal-dialog-id {
+    max-width: 700px !important;
+  }
+  #modal-img {
+    width: 660px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .img_galery,
+  .video {
+    width: 18rem;
+  }
+  #card-info-id {
+    width: 300px;
+  }
+  #card-trivia-id {
+    width: 315px;
+    height: 370px;
+  }
+  #google-map-id {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-item:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  #modal-dialog-id {
+    max-width: 700px !important;
+  }
+  #modal-img {
+    width: 660px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .img_galery,
+  .video {
+    width: 24rem;
+  }
+  #card-info-id {
+    width: 340px;
+  }
+  #card-trivia-id {
+    width: 270px;
+    height: 350px;
+  }
+  #google-map-id {
+    width: 570px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .nav-item:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  #modal-dialog-id {
+    max-width: 700px !important;
+  }
+  #modal-img {
+    width: 660px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .img_galery,
+  .video {
+    width: 28rem;
+  }
+  #card-info-id {
+    width: 350px;
+  }
+  #card-trivia-id {
+    width: 375px;
+    height: 350px;
+  }
+  #google-map-id {
+    width: 650px;
+  }
+}
+
+.img_max_height {
+  width: 100%;
+  max-height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 540px) {
+  .display-carousel {
+    display: none;
+  }
+  .display-images {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .display-carousel {
+    display: block;
+  }
+  .display-images {
+    display: none;
+  }
+}
+
+.img-about {
+  float: right;
+  margin-left: 1rem;
+  max-width: 320px;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-bottom: 1rem;
+}
+
+.pt05 {
+  padding-top: 0.5rem;
+}
+
+.img_galery {
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img_galery:hover {
+  -webkit-filter: grayscale(0.7);
+          filter: grayscale(0.7);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+}
+
+.accordion-header,
+.accordion-body {
+  font-family: "Roboto" !important;
+}
+
+.accordion-button {
+  background-color: #f2f2f2;
+}
+
+.accordion-button:hover {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+
+#card-info-id {
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8cbf3f), color-stop(#9453a6), to(#f2cc0f));
+  background: linear-gradient(#8cbf3f, #9453a6, #f2cc0f);
+}
+
+.div-card img {
+  max-width: 200px;
+  max-height: 150px;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+textarea {
+  height: 100px;
+}
+
+#trivia-result {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  font-family: 'Roboto';
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#card-trivia-id {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8cbf3f), color-stop(#9453a6), to(#f2cc0f));
+  background: linear-gradient(#8cbf3f, #9453a6, #f2cc0f);
+}
+
+#footer {
+  color: #f2f2f2;
+  text-align: center;
+  font-style: italic;
+  background-color: #0d0d0d;
+  padding: 1rem;
+}
+
+.fa-brands:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,25 @@
+.img_max_height {
+  width: 100%;
+  max-height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 540px) {
+  .display-carousel {
+    display: none;
+  }
+  .display-images {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .display-carousel {
+    display: block;
+  }
+  .display-images {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

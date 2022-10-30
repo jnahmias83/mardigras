@@ -1,0 +1,15 @@
+@import 'variables';
+
+.accordion-header,
+.accordion-body {
+  font-family: "Roboto" !important;
+}
+
+.accordion-button {
+  background-color: $grey;
+
+  &:hover {
+    background-color: $black;
+    color: $grey;
+  }
+}

@@ -1,0 +1,18 @@
+#trivia-result {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  font-family: 'Roboto';
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#card-trivia-id {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8cbf3f), color-stop(#9453a6), to(#f2cc0f));
+  background: linear-gradient(#8cbf3f, #9453a6, #f2cc0f);
+}
+/*# sourceMappingURL=trivia.css.map */

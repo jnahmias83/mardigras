@@ -1,0 +1,16 @@
+@import 'variables';
+
+#card-info-id {
+    height: 300px;
+    background: linear-gradient($green, $violet, $yellow);
+}
+  
+  .div-card img {
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: cover !important;
+  }
+  
+  textarea {
+    height: 100px;
+  }
